@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8d1f2b53e0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100&display=swap" rel="stylesheet">
+    <title>Medical Website</title>
+</head>
+<body>
+
+<!--------------------------- NAVBAR ---------------------------->
+
+    <nav class="navbar">
+
+        <ul class="nav-list" id="nav-list">
+            <li class="list-item"><a href="#about-section">About</a></li>  
+            <li class="list-item"><a href="#services-section">Services</a></li>
+            <li class="list-item"><a href="#staff-section">Team</a></li>
+            <li class="list-item"><a href="#resources-section">Resources</a></li>
+            <li class="list-item"><a href="#subscribe-section">Subscribe</a></li>
+   
+        </ul>
+        <div>
+            <button class="login-button">Log in/Sign</button>
+        </div>
+
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+
+<!------------------ HERO ---------------------------->
+
+    <div class="hero-section" id="hero-section">
+        <div class="hero-info">
+            <h1>Your health is our priority</h1>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <a href="#" class="hero-button">Find a Doctor</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="./images/hero-image.png">
+        </div>
+    </div>
+
+
+<!------------------ ABOUT US ---------------------------->
+
+    <div class="about-section" id="about-section">
+
+        <div class="about-container">
+            <h1>Generic Health Centre</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda itaque consequatur harum aperiam quis vel quam quo tenetur amet provident? In fugit perspiciatis eius cupiditate, ipsa, debitis eum quidem voluptates soluta ullam, quibusdam rem id. Ducimus explicabo odio soluta tempora.</p>
+        </div>
+    
+    </div>
+    
+
+<!------------------ STAFF ---------------------------->
+
+    <div class="staff-section" id="staff-section">
+        <div class="staff-container">
+            <h1>Our Team</h1>
+
+            <div class="doctor">
+                <div class="image">
+                    <img src="./images/guy1.jpg">
+                </div>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda itaque consequatur harum aperiam quis vel quam quo tenetur amet provident? In fugit perspiciatis eius cupiditate, ipsa, debitis eum quidem voluptates soluta ullam, quibusdam rem id. Ducimus explicabo odio soluta tempora.</p>
+           
+        </div>
+    </div>
+
+<!------------------ SERVICES ---------------------------->
+
+<div class="services-section" id="services-section">
+
+    <h1>Services</h1>
+    
+    <ul class="image-gallery">
+        <li>
+            <img src="images/grid-physio.jpg" alt=""/>
+            <div class="text">Physiology
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat numquam officia enim itaque eaque commodi exercitationem expedita? Quia, a.</p>
+
+            </div>
+        </li>
+        <li>
+            <img src="images/grid-dermatology.png" alt=""/>
+            <div class="text">Dermatology</div>
+        </li>
+        <li>
+            <img src="images/grid-diabetes.jpg" alt=""/>
+            <div class="text">Diabetes</div>
+        </li>
+        <li>
+            <img src="images/grid-gynecology.jpg" alt=""/>
+            <div class="text">Gynecology</div>
+        </li>
+        <li>
+            <img src="images/grid-mentalhealth.jpg" alt=""/>
+            <div class="overlay"><span>Mental Health</span></div>
+        </li>
+        <li>
+            <img src="images/grid-medicalimaging.jpg" alt=""/>
+            <div class="overlay"><span>Medical Imaging</span></div>
+        </li>
+        <li>
+            <img src="images/grid-cancer.jpg" alt=""/>
+            <div class="overlay"><span>After Cancer Treatment</span></div>
+        </li>
+        <li>
+            <img src="images/grid-rheumatology.png" alt=""/>
+            <div class="overlay"><span>Rheumatology</span></div>
+        </li>
+        <li>
+            <img src="images/grid-massage.jpeg" alt=""/>
+            <div class="overlay"><span>Massage Therapy</span></div>
+        </li>
+       
+    </ul>
+
+</div>
+
+<!------------------ NEWS & RESOURCES & ARTICLES ---------------------------->
+
+    <div class="resources-section" id="resources-section">
+
+        <h1>Resources</h1>
+
+    </div>
+
+<!------------------ TESTIMONIALS ---------------------------->
+
+    <div class="testimonials-section" id="testimonials-section">
+        <!-- https://arorahandsurgery.com/michigan-hand-patient-stories/ -->
+
+        <div class="testimonials-container">
+                <h1>What our patients are saying</h1>
+ 
+            <div class="row">
+
+                <!-- first column -->
+                <div class="column">
+                    <div class="testimonial">
+                        <!-- <img src="./images/testimonial1.jpg" alt="">     -->
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed suscipit obcaecati mollitia magni eligendi eos atque dolorem explicabo ex magnam, nam rem voluptate in, eveniet ratione vero dolor voluptatum necessitatibus.</p>
+                        <div class="name">- Jakob F. 73</div>
+                    </div>
+                </div>
+
+                <!-- second column -->
+                <div class="column">
+                    <div class="testimonial">
+                        <!-- <img src="./images/testimonial2.jpg" alt="">   -->
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed suscipit obcaecati mollitia magni eligendi eos atque dolorem explicabo ex magnam, nam rem voluptate in, eveniet ratione vero dolor voluptatum necessitatibus.</p>
+                        <div class="name">- Stella M., 42</div>
+                    </div>
+                </div>
+
+                <!-- third column -->
+                <div class="column">
+                    <div class="testimonial">
+                        <!-- <img src="./images/testimonial3.jpg" alt="">    -->
+                        <p>Staff are always friendly, professional and helpful. I wouldn't hesitate to recommend this clinic to all of my friends</p>
+                        <div class="name">- Annapurna M., 55</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <button class="read-more">Read more patient stories</button>
+    </div>
+
+<!------------------ SUBSCRIBE ---------------------------->
+
+    <div class="subscribe-section" id="subscribe-section"></div>
+
+        <div class="subscribe-content">
+            <img src="./images/icon-doctor.png" height="200px" width="200px">
+          
+            <h2 class="subscribe-title">Subscribe to our newsletter</h2>
+            <p class="subscribe-text">Sign up to get the latest medical health news and tips delivered straight to your inbox</p>
+            
+            <div class="form">
+                <input type="email" class="form-email" placeholder="Enter your email address">
+                <button class="form-button">SUBSCRIBE</button>
+            </div>
+
+            <div class="note">
+                <input type="checkbox">
+                <p class="agree">I agree to my email address being used</p>
+            </div>
+
+        </div>
+    </div>
+    
+<!----------------------  FOOTER  ---------------------------->
+
+<div class="footer-section" id="footer-section">
+
+    <div class="contact">
+        
+        <div class="hours-and-location">
+            <div class="address">
+                <p>2056 Runnymede Boulevard</p>
+                <p>Toronto, ON M2P 6U9</p>
+                <p>416-533-0000</p>
+            </div>
+
+            <div class="hours">
+                <p>Mon - Fri: 06:00-23:00</p>
+                <p>Sat & Sun: 08:00-19:00</p>
+            </div>
+        </div>
+
+        <div class="footer-icon">
+            <img src="images/logo-transparent-removebg.png" height="70px">
+        </div>
+
+        <div class="socials">
+            <i id="icon" class="fa-brands fa-facebook"></i>
+            <i id="icon" class="fa-brands fa-instagram"></i>
+            <i id="icon" class="fa-brands fa-twitter"></i>
+            <i id="icon" class="fa-brands fa-linkedin-in"></i>
+        </div>
+
+    </div>
+        
+        <div class="footer-row">
+
+            <div class="footer-column">
+                <h3>PATIENTS & VISITORS</h3>
+                <p>Our Locations</p>    
+                <p>Covid-19 Updates</p>    
+                <p>FAQ</p>    
+                <p>Find a Doctor</p>    
+            </div> 
+
+            <div class="footer-column">
+                <h3>SERVICES</h3>
+                <p>Physiotherapy</p>    
+                <p>Nutrition</p>    
+                <p>Family Medicine</p>    
+                <p>Reproductive Health</p>   
+                <p>Dermatology</p>    
+                <p>Medical Imaging</p>   
+            </div>  
+            
+            <div class="footer-column">
+                <h3>ABOUT US</h3>
+                <p>Media Inquiries</p>    
+                <p>Education & Research</p>    
+                <p>Accessibility at myHealth</p>    
+                <p>Careers & Volunteers</p>    
+                <p>Health Professionals</p>    
+            </div>
+            
+            <div class="footer-column">
+                <h3>CONNECT</h3>
+                <p>Refer Patients</p>    
+                <p>Pay a Bill</p>    
+                <p>Donate and Support</p>    
+                <p>Sign-in to myHealth</p>  
+            </div>  
+
+        </div>
+
+        <p class="copyright">Copyright @ 2022 Carminos </p>
+    </div>
+    </div>
+
+    <script src="app.js">
+        
+    </script>
+</body>
+</html>
+
+
