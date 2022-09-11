@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8d1f2b53e0.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100&display=swap" rel="stylesheet">
     <title>Medical Website</title>
 </head>
 <body>
@@ -18,14 +20,19 @@
 
     <nav class="navbar">
 
+        <div class="logo">
+            <img src="./images/logo.jpg" width="50px" height="50px"><div class="logo-text">myHealth</div>
+        </div>
+
+        <!-- <div class="menu-button"><i class="fas fa-bars"></i></div> -->
         <ul class="nav-list" id="nav-list">
             <li class="list-item"><a href="#about-section">About</a></li>  
+            <li class="list-item"><a href="#staff-section">Doctors</a></li>
             <li class="list-item"><a href="#services-section">Services</a></li>
-            <li class="list-item"><a href="#staff-section">Team</a></li>
-            <li class="list-item"><a href="#resources-section">Resources</a></li>
-            <li class="list-item"><a href="#subscribe-section">Subscribe</a></li>
-   
+            <li class="list-item"><a href="#testimonials-section">Testimonials</a></li>
+            <li class="list-item"><a href="#subscribe-section">Connect</a></li>
         </ul>
+
         <div>
             <button class="login-button">Log in/Sign</button>
         </div>
@@ -34,7 +41,8 @@
             <div class="menu-line"></div>
             <div class="menu-line"></div>
             <div class="menu-line"></div>
-        </div>
+        </div> 
+
     </nav>
 
 <!------------------ HERO ---------------------------->
@@ -42,31 +50,36 @@
     <div class="hero-section" id="hero-section">
         <div class="hero-info">
             <h1>Your health is our priority</h1>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <h2>At <span class="blue">myHealth</span>, our world class medical experts provide the care you need with the attention you deserve</h2>
             <a href="#" class="hero-button">Find a Doctor</a>
         </div>
 
         <div class="hero-image">
-            <img src="./images/hero-image.png">
+            <img src="./images/hero-image.png" width="500px" height="500px">
         </div>
     </div>
-
 
 <!------------------ ABOUT US ---------------------------->
 
     <div class="about-section" id="about-section">
 
-        <div class="about-container">
-            <h1>Generic Health Centre</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda itaque consequatur harum aperiam quis vel quam quo tenetur amet provident? In fugit perspiciatis eius cupiditate, ipsa, debitis eum quidem voluptates soluta ullam, quibusdam rem id. Ducimus explicabo odio soluta tempora.</p>
+            <div class="about-image">
+                <img src="./images/hospital.jpg" width="700px" height="500px">
+            </div>
+    
+            <div class="about-info">
+                <h1>Your needs first</h1>
+                <h2>Transforming lives through excellence in health care at our state of the art facility</h2>
+            </div>
+
         </div>
-    
     </div>
-    
+
+    <button onclick="topFunction()" id="scroll-btn" title="Go to top">
+        <img src="./images/arrow.png" height="50px" width="50px"></button>
 
 <!------------------ STAFF ---------------------------->
 
-  
     <div class="staff-section" id="staff-section">
 
         <div class="doctors-container">
@@ -129,128 +142,157 @@
 <!------------------ SERVICES ---------------------------->
 
 <div class="services-section" id="services-section">
+    <div class="services-container">
 
-    <h1>Services</h1>
-    
-    <ul class="image-gallery">
-        <li>
-            <img src="images/grid-physio.jpg" alt=""/>
-            <div class="text">Physiology
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat numquam officia enim itaque eaque commodi exercitationem expedita? Quia, a.</p>
+    <h1>Our Services</h1>
 
-            </div>
-        </li>
-        <li>
-            <img src="images/grid-dermatology.png" alt=""/>
-            <div class="text">Dermatology</div>
-        </li>
-        <li>
-            <img src="images/grid-diabetes.jpg" alt=""/>
-            <div class="text">Diabetes</div>
-        </li>
-        <li>
-            <img src="images/grid-gynecology.jpg" alt=""/>
-            <div class="text">Gynecology</div>
-        </li>
-        <li>
-            <img src="images/grid-mentalhealth.jpg" alt=""/>
-            <div class="overlay"><span>Mental Health</span></div>
-        </li>
-        <li>
-            <img src="images/grid-medicalimaging.jpg" alt=""/>
-            <div class="overlay"><span>Medical Imaging</span></div>
-        </li>
-        <li>
-            <img src="images/grid-cancer.jpg" alt=""/>
-            <div class="overlay"><span>After Cancer Treatment</span></div>
-        </li>
-        <li>
-            <img src="images/grid-rheumatology.png" alt=""/>
-            <div class="overlay"><span>Rheumatology</span></div>
-        </li>
-        <li>
-            <img src="images/grid-massage.jpeg" alt=""/>
-            <div class="overlay"><span>Massage Therapy</span></div>
-        </li>
-       
-    </ul>
+    <div class="services-grid">
 
-</div>
+        <div class="grid">
+            <img src="./images/icon-physio-b&w.png">
+            <p class="grid-title">Rehabilitation</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-resp.png">
+            <p class="grid-title">Respiratory</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-pediatrics.png">
+            <p class="grid-title">Pediatrics</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-cardiology.png">
+            <p class="grid-title">Cardiology</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-cancer.png">
+            <p class="grid-title">Oncology</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-rheumatology-small.png">
+            <p class="grid-title">Rheumatology</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-diabetes.png">
+            <p class="grid-title">Diabetes Care</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-xray.png">
+            <p class="grid-title">Radiology</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-pharmacy.png">
+            <p class="grid-title">Pharmacy</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-gyno.png">
+            <p class="grid-title">Gynecology</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-surgery.png">
+            <p class="grid-title">Surgery</p>
+        </div>
+        <div class="grid">
+            <img src="./images/icon-bloodwork.png">
+            <p class="grid-title">Bloodwork</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-neurology.png">
+            <p class="grid-title">Neurology</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-podiatry.png">
+            <p class="grid-title">Podiatry</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-cast.png">
+            <p class="grid-title">Fractures</p>
+        </div> 
+        </div> 
 
-<!------------------ NEWS & RESOURCES & ARTICLES ---------------------------->
+    </div> 
 
-    <div class="resources-section" id="resources-section">
-
-        <h1>Resources</h1>
-
-    </div>
+</div> 
 
 <!------------------ TESTIMONIALS ---------------------------->
 
     <div class="testimonials-section" id="testimonials-section">
-        <!-- https://arorahandsurgery.com/michigan-hand-patient-stories/ -->
 
         <div class="testimonials-container">
                 <h1>What our patients are saying</h1>
  
             <div class="row">
 
-                <!-- first column -->
-                <div class="column">
+                <div class="testimonial-column">
                     <div class="testimonial">
-                        <!-- <img src="./images/testimonial1.jpg" alt="">     -->
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed suscipit obcaecati mollitia magni eligendi eos atque dolorem explicabo ex magnam, nam rem voluptate in, eveniet ratione vero dolor voluptatum necessitatibus.</p>
-                        <div class="name">- Jakob F. 73</div>
+                        <p>"Completely satisfied with level of service and friendliness of staff. No issues encountered with procedure and post procedure care of high standard. "Excellent staff,so cheerful, helpful and professional. A pleasure to be a patient.""</p>
+                        <div class="name">- Jakob F. </div>
                     </div>
                 </div>
 
-                <!-- second column -->
-                <div class="column">
+                <div class="testimonial-column">
                     <div class="testimonial">
-                        <!-- <img src="./images/testimonial2.jpg" alt="">   -->
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed suscipit obcaecati mollitia magni eligendi eos atque dolorem explicabo ex magnam, nam rem voluptate in, eveniet ratione vero dolor voluptatum necessitatibus.</p>
-                        <div class="name">- Stella M., 42</div>
+                        <p>
+                            "Very impressed by level of expertise and care, impeccable team work observed in various stages of my treatment. Nothing was too much trouble. The hospital was spotlessly clean and attention to detail was superb, I could not have asked for more. I have already recommended this hospital to friends and family."</p>
+                        <div class="name">- Stella M.</div>
                     </div>
                 </div>
 
-                <!-- third column -->
-                <div class="column">
+                <div class="testimonial-column">
                     <div class="testimonial">
-                        <!-- <img src="./images/testimonial3.jpg" alt="">    -->
-                        <p>Staff are always friendly, professional and helpful. I wouldn't hesitate to recommend this clinic to all of my friends</p>
-                        <div class="name">- Annapurna M., 55</div>
+                        <p>"I can not praise the the staff, both medical and administrative, for the professional and caring and kind way I was treated. They were both patient and reassuring and more than happy to answer all my questions. Brilliant care from all the staff!! Thank you so much.""</p>
+                        <div class="name">- Annapurna M.</div>
+                    </div>
+                </div>
+
+                 <div class="testimonial-column">
+                    <div class="testimonial">
+                        <p>Staff are always friendly, professional and helpful. I wouldn't hesitate to recommend this clinic to all of my friends. Your organization should be proud to have such kind hearted people. They made sure that my daughter’s hospitalization was very pleasant.</p>
+                        <div class="name">- AVERY P.</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-column">
+                    <div class="testimonial">
+                        <p>We would like to let you know how much we appreciate the special care our daughter was given by the doctors and staff at your hospital. Our baby’s physician was professional, kind, understanding, and her treatment was “right on.” </p>
+                        <div class="name">- Lucia H.</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-column">
+                    <div class="testimonial">
+                        <p>My husband was diagnosed with a brain bleed after an MRI.  He received excellent care at your hospital. The compassion shown to him amy family, was beyond anything I would have expected from a busy hospital staff.
+                            Staff were so wonderful during a very difficult time in our lives.</p>
+                        <div class="name">- Stella M.</div>
                     </div>
                 </div>
 
             </div>
         </div>
-
-        <button class="read-more">Read more patient stories</button>
     </div>
 
 <!------------------ SUBSCRIBE ---------------------------->
 
     <div class="subscribe-section" id="subscribe-section"></div>
 
+    <h1>Stay Connected</h1>
+
         <div class="subscribe-content">
-            <img src="./images/icon-doctor.png" height="200px" width="200px">
-          
-            <h2 class="subscribe-title">Subscribe to our newsletter</h2>
-            <p class="subscribe-text">Sign up to get the latest medical health news and tips delivered straight to your inbox</p>
+            <h2 class="subscribe-title">Join our online community!</h2>
+            <p class="subscribe-text">Sign up to get the latest medical health news delivered straight to your inbox</p>
             
             <div class="form">
                 <input type="email" class="form-email" placeholder="Enter your email address">
-                <button class="form-button">SUBSCRIBE</button>
+                <button class="form-button">Subscribe</button>
             </div>
 
             <div class="note">
-                <input type="checkbox">
-                <p class="agree">I agree to my email address being used</p>
+                <input type="checkbox"><p class="agree">I agree to my email address being used</p>
             </div>
 
         </div>
     </div>
-    
+
 <!----------------------  FOOTER  ---------------------------->
 
 <div class="footer-section" id="footer-section">
@@ -270,15 +312,12 @@
             </div>
         </div>
 
-        <div class="footer-icon">
-            <img src="images/logo-transparent-removebg.png" height="70px">
-        </div>
-
         <div class="socials">
             <i id="icon" class="fa-brands fa-facebook"></i>
             <i id="icon" class="fa-brands fa-instagram"></i>
             <i id="icon" class="fa-brands fa-twitter"></i>
             <i id="icon" class="fa-brands fa-linkedin-in"></i>
+            <i id="icon" class="fa-brands fa-youtube"></i>
         </div>
 
     </div>
