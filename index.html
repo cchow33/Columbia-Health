@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8d1f2b53e0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100&display=swap" rel="stylesheet">
+    <title>Medical Website</title>
+</head>
+<body>
+
+<!--------------------------- NAVBAR ---------------------------->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="./images/logo.jpg" width="50px" height="50px">
+        </div>
+
+        <ul class="nav-list" id="nav-list">
+            <li class="list-item"><a href="#about-section">About</a></li>  
+            <li class="list-item"><a href="#services-section">Services</a></li>
+            <li class="list-item"><a href="#staff-section">Team</a></li>
+            <li class="list-item"><a href="#resources-section">Resources</a></li>
+            <li class="list-item"><a href="#subscribe-section">Subscribe</a></li>
+        </ul>
+
+        <div>
+            <button class="login-button">Log in/Sign</button>
+        </div>
+
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+
+<!------------------ HERO ---------------------------->
+
+    <div class="hero-section" id="hero-section">
+        <div class="hero-info">
+            <h1>Your health is our priority</h1>
+            <h2>Our world class medical experts provide the care you need with the attention you deserve</h2>
+            <a href="#" class="hero-button">Find a Doctor</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="./images/hero-image.png" width="500px" height="500px">
+        </div>
+    </div>
+
+<!------------------ ABOUT US ---------------------------->
+
+    <div class="about-section" id="about-section">
+
+            <div class="about-image">
+                <img src="./images/hospital.jpg" width="700px" height="500px">
+            </div>
+    
+            <div class="about-info">
+                <h1>Your needs first</h1>
+                <h2>Transforming lives through excellence in health care at our state of the art facility</h2>
+            </div>
+
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="scroll-btn" title="Go to top">
+        <img src="./images/arrow.png" height="50px" width="50px"></button>
+
+<!------------------ STAFF ---------------------------->
+
+    <div class="staff-section" id="staff-section">
+
+        <div class="doctors-container">
+            <h1>Meet Our Doctors</h1>
+
+            <div class="doctors-grid">
+                
+                <div class="doctor-card">
+                    <img src="./images/doctor6.jpg">
+                    <div class="text">
+                        <p class="title">Dr. Michael Ahlman</p>
+                        <p class="department">Radiology and Imaging Sciences</p>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <img src="./images/doctor1.png">
+                    <div class="text">
+                        <p class="title">Dr. Samantha Eveline Chase</p>
+                        <p class="department">Rehabilitation Medicine</p>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <img src="./images/doctor9.png">
+                    <div class="text">
+                        <p class="title">Dr. Nadeem Igbo-Igbo</p>
+                        <p class="department">Hematology Science</p>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <img src="./images/doctor4.png">
+                    <div class="text">
+                        <p class="title">Dr. Dreyson John Bryant</p>
+                        <p class="department">Transfusion Medicine</p>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <img src="./images/doctor10.jpg">
+                    <div class="text">
+                        <p class="title">Dr. Jeannie R. Burklow</p>
+                        <p class="department">Critical Care Medicine</p>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <img src="./images/doctor5.png">
+                    <div class="text">
+                        <p class="title">Dr. Anthony Chung</p>
+                        <p class="department">Internal Medicine</p>
+                    </div>
+                </div>
+
+            </div>           
+        </div>
+    </div>
+
+<!------------------ SERVICES ---------------------------->
+
+<div class="services-section" id="services-section">
+    <div class="services-container">
+
+    <h1 class="services h1">Our Services</h1>
+
+    <div class="services-grid">
+
+        <div class="grid">
+            <img src="./images/icon-physio-b&w.png">
+            <p class="grid-title">Rehabilitation</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-resp.png">
+            <p class="grid-title">Respiratory</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-pediatrics.png">
+            <p class="grid-title">Pediatrics</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-cardiology.png">
+            <p class="grid-title">Cardiology</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-cancer.png">
+            <p class="grid-title">Oncology</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-rheumatology-small.png">
+            <p class="grid-title">Rheumatology</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-diabetes.png">
+            <p class="grid-title">Diabetes Care</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-xray.png">
+            <p class="grid-title">Radiology</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-pharmacy.png">
+            <p class="grid-title">Pharmacy</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-gyno.png">
+            <p class="grid-title">Gynecology</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-surgery.png">
+            <p class="grid-title">Surgery</p>
+        </div>
+        <div class="grid">
+            <img src="./images/icon-bloodwork.png">
+            <p class="grid-title">Bloodwork</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-neurology.png">
+            <p class="grid-title">Neurology</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-podiatry.png">
+            <p class="grid-title">Podiatry</p>
+        </div> 
+        <div class="grid">
+            <img src="./images/icon-cast.png">
+            <p class="grid-title">Fractures</p>
+        </div> 
+        </div> 
+
+    </div> 
+
+</div> 
+
+<!------------------ TESTIMONIALS ---------------------------->
+
+    <div class="testimonials-section" id="testimonials-section">
+        <!-- https://arorahandsurgery.com/michigan-hand-patient-stories/ -->
+
+        <div class="testimonials-container">
+                <h1>What our patients are saying</h1>
+ 
+            <div class="row">
+
+                <div class="testimonial-column">
+                    <div class="testimonial">
+                        <p>"Completely satisfied with level of service and friendliness of staff. No issues encountered with procedure and post procedure care of high standard. "Excellent staff,so cheerful, helpful and professional. A pleasure to be a patient.""</p>
+                        <div class="name">- Jakob F. </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-column">
+                    <div class="testimonial">
+                        <p>
+                            "Very impressed by level of expertise and care, impeccable team work observed in various stages of my treatment. Nothing was too much trouble. The hospital was spotlessly clean and attention to detail was superb, I could not have asked for more. I have already recommended this hospital to friends and family."</p>
+                        <div class="name">- Stella M.</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-column">
+                    <div class="testimonial">
+                        <p>"I can not praise the the staff, both medical and administrative, for the professional and caring and kind way I was treated. They were both patient and reassuring and more than happy to answer all my questions. Brilliant care from all the staff!! Thank you so much.""</p>
+                        <div class="name">- Annapurna M.</div>
+                    </div>
+                </div>
+
+                 <div class="testimonial-column">
+                    <div class="testimonial">
+                        <p>Staff are always friendly, professional and helpful. I wouldn't hesitate to recommend this clinic to all of my friends. Your organization should be proud to have such kind hearted people. They made sure that my daughter’s hospitalization was very pleasant.</p>
+                        <div class="name">- AVERY P.</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-column">
+                    <div class="testimonial">
+                        <p>We would like to let you know how much we appreciate the special care our daughter was given by the doctors and staff at your hospital. Our baby’s physician was professional, kind, understanding, and her treatment was “right on.” </p>
+                        <div class="name">- Lucia H.</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-column">
+                    <div class="testimonial">
+                        <p>My husband was diagnosed with a brain bleed after an MRI.  He received excellent care at your hospital. The compassion shown to him amy family, was beyond anything I would have expected from a busy hospital staff.
+                            Staff were so wonderful during a very difficult time in our lives.</p>
+                        <div class="name">- Stella M.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!------------------ SUBSCRIBE ---------------------------->
+
+    <div class="subscribe-section" id="subscribe-section"></div>
+    <!-- <img src="./images/magicpattern-blob.png" class="subscribe-blob" width="400px" height="400px">
+          -->
+        <div class="subscribe-content">
+            <h2 class="subscribe-title">Join our online community!</h2>
+            <p class="subscribe-text">Sign up to get the latest medical health news delivered straight to your inbox</p>
+            
+            <div class="form">
+                <input type="email" class="form-email" placeholder="Enter your email address">
+                <button class="form-button">Subscribe</button>
+            </div>
+
+            <div class="note">
+                <input type="checkbox"><p class="agree">I agree to my email address being used</p>
+            </div>
+
+        </div>
+    </div>
+
+<!----------------------  FOOTER  ---------------------------->
+
+<div class="footer-section" id="footer-section">
+
+    <div class="contact">
+        
+        <div class="hours-and-location">
+            <div class="address">
+                <p>2056 Runnymede Boulevard</p>
+                <p>Toronto, ON M2P 6U9</p>
+                <p>416-533-0000</p>
+            </div>
+
+            <div class="hours">
+                <p>Mon - Fri: 06:00-23:00</p>
+                <p>Sat & Sun: 08:00-19:00</p>
+            </div>
+        </div>
+
+        <!-- <div class="footer-icon">
+            <img src="images/logo-transparent-removebg.png" height="70px">
+        </div> -->
+
+        <div class="socials">
+            <i id="icon" class="fa-brands fa-facebook"></i>
+            <i id="icon" class="fa-brands fa-instagram"></i>
+            <i id="icon" class="fa-brands fa-twitter"></i>
+            <i id="icon" class="fa-brands fa-linkedin-in"></i>
+            <i id="icon" class="fa-brands fa-youtube"></i>
+        </div>
+
+    </div>
+        
+        <div class="footer-row">
+
+            <div class="footer-column">
+                <h3>PATIENTS & VISITORS</h3>
+                <p>Our Locations</p>    
+                <p>Covid-19 Updates</p>    
+                <p>FAQ</p>    
+                <p>Find a Doctor</p>    
+            </div> 
+
+            <div class="footer-column">
+                <h3>SERVICES</h3>
+                <p>Physiotherapy</p>    
+                <p>Nutrition</p>    
+                <p>Family Medicine</p>    
+                <p>Reproductive Health</p>   
+                <p>Dermatology</p>    
+                <p>Medical Imaging</p>   
+            </div>  
+            
+            <div class="footer-column">
+                <h3>ABOUT US</h3>
+                <p>Media Inquiries</p>    
+                <p>Education & Research</p>    
+                <p>Accessibility at myHealth</p>    
+                <p>Careers & Volunteers</p>    
+                <p>Health Professionals</p>    
+            </div>
+            
+            <div class="footer-column">
+                <h3>CONNECT</h3>
+                <p>Refer Patients</p>    
+                <p>Pay a Bill</p>    
+                <p>Donate and Support</p>    
+                <p>Sign-in to myHealth</p>  
+            </div>  
+
+        </div>
+
+        <p class="copyright">Copyright @ 2022 Carminos </p>
+    </div>
+    </div>
+
+    <script src="app.js">
+        
+    </script>
+</body>
+</html>
+
+
