@@ -1,37 +1,58 @@
 *{
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     font-family: 'Poppins', sans-serif;
 }
 
 /* -------------- NAVBAR ---------------------- */
 
+html{
+    overflow-x: hidden;
+}
+.logo-text{
+    color: seagreen;
+    font-weight: bolder;
+    font-size: 12px;
+}
+.blue{
+    color: seagreen;
+}
 .navbar{
     display: flex;
     justify-content: space-around;  
-    align-items: center;  /* vertically align everything */
+    align-items: center;  
     font-size: 20px; 
-    /* background-color: #a2cfcd; */
     padding-top: 15px;
 }
 .nav-list{
     list-style-type: none;
 }
 .nav-list .list-item{
+    position: relative;
     display: inline-block;
     padding: 20px 10px;
 }
-.navbar .list-item a{ /* links */
+.nav-list .list-item a{ 
     color: navy;
     text-decoration: none;
     cursor: pointer;
 }
-.navbar .list-item a:hover{
-    color: #1b3c74;
+.nav-list .list-item a:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
 }
-.container-icon{
-    color: #1b3c74;
+.nav-list .list-item a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 .login-button{
     cursor: pointer;
@@ -41,9 +62,34 @@
     border: 2px solid black;
     box-shadow: 5px 5px gray; 
     font-size: 14px;
- }
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
 .login-button:hover{
-    color: black;
+    color:  black;
+}
+.login-button::after {
+    content: "";
+    background: #dce6f2;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+    transition: all 0.35s;
+}
+.login-button:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+}
+.login-button::after {
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
 }
 .menu{
     display: none;
@@ -59,35 +105,46 @@
 
 .hero-section{
     width: 90%;
+    height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
 }
 .hero-info{
+    padding-left: 30px;
     flex-direction: row;
     width: 50%;
+    height: 55%;
     justify-content: center;
     align-items: center;
+    background-color: #f0faf9;
+    border-radius: 40px;
 }
 .hero-image{
     flex-direction: row;
-    width: 40%;
-    margin: 0 auto;    
+    width: 50%;
+    margin: 0 auto;   
+    background-color: transparent;
+    background: transparent; 
 }
 h1{
     font-size: 40px;
     font-weight: 900;
     color: navy;
+    padding-top: 25%;
     padding-bottom:20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 h2{
     font-size: 20px;
     padding-bottom: 40px;
 }
 .hero-button{
+    font-size: 18px;
     width: 200px;
     padding: 15px;
     background-color: navy;
@@ -100,151 +157,154 @@ h2{
     text-decoration: none;
 }
 .hero-button:hover{
+    background-color: #dce6f2;
+    color: black;
 }
 
-/* -------------- About Us  ---------------------- */
+/* -------------- ABOUT ---------------------- */
 
 .about-section{
     width: 90%;
+    height: 95%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
+.about-section h1{
+    padding-top: 10%;
+    color: navy;
+    align-items: center;
+    justify-content: center;
+}
+.about-info{
+    padding-left: 30px;
+    flex-direction: row;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    background-color: #dce6f2;
+    align-items: center;
+    justify-content: center;
+}
+.about-image{
+    flex-direction: row;
+    max-width: 100%;
+    margin: 0 auto;   
+    background-color: transparent;
+    background: transparent; 
+}
 
-/* -------------- TEAM ---------------------- */
+/* -------------- DOCTORS ---------------------- */
 
 .staff-section{
     width: 90%;
+    min-height: 90vh;
     margin: 0 auto;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center; */
+}
+.staff-section h1{
+    color: navy;
+    padding-bottom: 30px;
+    margin-top: 0;
+}
+.doctors-container{
+    /* margin-top: 60px; */
+    text-align: center;
+}
+.doctors-grid{
+    width: auto;
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+.doctor-card{
+    width: 250px;
+    margin: 5px;
+    padding: 20px 10px;
+}
+.doctor-card img{
+    background: #dce6f2;
+    max-width: 190px;
+    width: 100%;
+    height: 190px;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 0px;
+    position: relative;
+    cursor: pointer;
+}
+.title{
+    color: navy;
+
+}
+.department{
+    font-size: 14px;
+    color:rgba(0, 0, 0, 0.35);
 }
 
-
-/* -------------- Services Section  ---------------------- */
+/* -------------- SERVICES ---------------------- */
 
 .services-section{
     width: 90%;
+    min-height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-.image-gallery{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    width: 80%;
-    margin: 0 auto;
-    height: 50%;
-}
-.image-gallery > li {
-    flex-basis: 280px; /* width */
-    list-style: none;
-    text-align: center;
-    color: black;
-    display: block;
-}  
-.image-gallery li img {
-    border-top-left-radius: 50%;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-    filter: grayscale(-1)
-}
-.image-gallery li img:hover{
-    filter: grayscale(1)
-}
-.image-gallery::after{
-    content: "";
-    flex-grow: 280px;
-}
-.image-gallery .text{
-    font-size: 10px;
-    transform: translate(-50%, -50%);
-    background: transparent;
-    width: 100%;
-}
-  
-
-/* .services-section{
-    padding: 40px 0;
-    width: 100vw;
-    text-align: center;
 }
 .services-container{
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 20px;
+    margin-top: 60px;
+    text-align: center;
 }
-.cards-container{
+.services h1{
+    margin-bottom: 30%;
+}
+.services-grid {  
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-.cards{
-    display: flex;
-    cursor: pointer;
-    width: 300px;
-    padding: 15px;
-    background-color: white;
-    border: 1px solid black;
-    font-size: 14px;
-    margin: 5px;
-    outline: none;
-    transition: all 200ms ease-in-out;
-}
-.cards:hover
-.login-button:hover{
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-    transform: translateY(2px);
-    -webkit-animation: gradientBG 1.5s ease-in-out forwards;
-    animation: gradientBG 1.5s ease-in-out forwards;
-    cursor: pointer;
-}
-.cards:active {
-    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
-    transform: translateY(4px);
-}
-.cards-content{
-    display: flex;
-    width: 50%;
-    font-size: 18px;
-    color: black;
-}
-.cards-content img{
-    width: 30px;
-    height: 20px;
-    padding-right: 10px;
-} */
-
-/* --------------  RESOURCES  ---------------------- */
-
-.resources-section{
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0px;
     justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
-/* -------------- Testimonials Section  ---------------------- */
+.services-grid .grid{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    align-items: center;
+}
+.grid img{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+.grid img:hover{
+    border: 2px solid #4362d7;
+}
+.grid-title{
+    margin-top: 15px;
+    color: grey;
+    font-size: 16px;
+    padding-top: 18px;
+}
+.grid-title:hover{
+    color: navy;
+}
 
+/* -------------- TESTIMONIALS  ---------------------- */
 
 .testimonials-section{
     padding: 40px 0;
     text-align: center;
     width: 90%;
+    min-height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -263,7 +323,7 @@ h2{
     justify-content: center;
     background-color: aliceblue;
 }
-.column{
+.testimonial-column{
     flex: 33.33%;
     max-width: 33.33%;
     box-shadow: border-box;
@@ -287,39 +347,29 @@ h2{
     color: #425cd2;
     text-transform: uppercase;
 }
-.read-more{
-    cursor: pointer;
-    font-size: 18px;
-    color: white;
-    background-color: #425cd2;
-    padding: 10px 15px;
-    border: none;
-}
-.read-more:hover{
 
-}
-
-/* -------------- NEWSLETTER Section  ---------------------- */
+/* -------------- NEWSLETTER ---------------------- */
 
 .subscribe-section{
     width: 90%;
+    height: 100vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    align-items: center;
 }
 .subscribe-content{
     display: flex;
+    height: 100vh;
+    width: 75%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    justify-content: center;
-    /* width: 650px; */
-    /* height: 374px; */
-    border-radius: 10px;
-    /* background: rgb(222, 238, 244); */
+    background: url('./images/community1.jpg'); 
+    background-repeat: no-repeat;
+    /* filter: brightness(75%); */
 }
 .subscribe-title{
     font-weight: bold;
@@ -327,37 +377,75 @@ h2{
     margin-bottom: 18px;
 }
 .subscribe-text{
-    max-width: 400px;
+    /* max-width: 400px; */
+    width: 400px;
     text-align: center;
-    margin-bottom: 53px;
     line-height: 1.5;
+    padding: 20px;
+    justify-content: center;
+    color: black;
+}
+.subscribe-blob{
+    position: relative;
+}
+.form-email{
+    padding: 15px;
+    flex-direction: column;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    left: 50%;
 }
 .form{
+    padding: 10px;
     margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 .form-button{
-    width: 150px;
-    padding: 10px;
-    background-color: navy;
+    margin-top: 30px;
+    width: 160px;
+    padding: 8px;
+    /* background-color: #5972e0; */
+    background-color: black;
     color: white;
-    border-radius: 20px 20px 20px 20px;
-    outline: none;
     cursor: pointer;
-    -webkit-transition: ease-out 0.4s;
-    -moz-transition: ease-out 0.4s;
-    transition: ease-out 0.4s;
-    font-size: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+input[type="email"] {
+    width: 300px;
+    height: 60px;
+    margin-left: 35px;
+    display: block;
+    color: grey;
+    outline: none;
+}
+.note{
+    display: flex;
+}
+.agree{
+    padding-left: 15px;
+    font-size: 12px;
+    color: black;
 }
 
 /* -------------- FOOTER  ---------------------- */
 
 .footer-section{
+    height: 100vh;
     width: 100vw;
     bottom: 0%;
     background: linear-gradient(to right, #354883, #000080);
     padding: 30px;
-    /* border-top-left-radius: 125px;
-    border-top-right-radius: 125px; */
     font-size: 16px;
     color: #929dbe;
     line-height: 26px;
@@ -369,11 +457,9 @@ h2{
     align-items: center;
     padding-bottom: 20px;
     line-height: 18px;
-        width: 90%;
-        margin: auto;
-        /* flex-wrap: wrap; */
-        /* align-items: flex-start; */
-        justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
 }
 .footer-icon{
     background-color: transparent;
@@ -395,7 +481,6 @@ h2{
     line-height: 18px;
     margin-right: 50px;
 }
-
 .footer-section .socials{
     display: flex;
     flex-direction: row;
@@ -403,7 +488,6 @@ h2{
     justify-content: center;
     padding-bottom: 20px;
 } 
-
 .footer-section .socials #icon{
     font-size: 30px;
     justify-content: center;
@@ -427,7 +511,6 @@ h2{
     flex-basis: 25%;
     padding: 10px;
     background-color: transparent;
-    /* padding-right: px; */
 }
 .footer-column h3, p{
     color: #929dbe;
@@ -450,17 +533,39 @@ h3{
     font-size: 10px;
     padding-top: 30px;
 }
+#scroll-btn {
+    display: none; 
+    position: fixed;
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99;
+    border: none; 
+    background-color: transparent;
+    outline: none;
+    cursor: pointer; 
+    padding: 15px; 
+    font-size: 8px; 
+}
+  
 
-/* -------------- Media Queries * ---------------------- */
+/* -------------- MEDIA QUERIES ---------------------- */
 
 @media all and (max-width: 480px){
+    /* NAVBAR */
+    html{
+    overflow-x: hidden;
+    }
     .navbar{
         flex-direction: column;
         position: relative;
     }
+    .navbar .logo{
+        display: flex;
+        align-items: left;
+    }
     .container-icon{
         width: 100%;
-        margin-left: 10px;
+        margin-left: 0px;
         margin-top: 10px;
     }
     .menu{
@@ -468,7 +573,16 @@ h3{
         position: absolute;
         right: 15px;
         top: 15px;
+        font-size: 60px;
+        min-height: 100vh;
     }
+    .menu-line{
+        width: 30px;
+        height: 4px;
+        background-color: #06476f;
+        margin-bottom: 4px;
+    }
+    
     .nav-list{
         list-style-type: none;
         width: 100%;
@@ -487,4 +601,151 @@ h3{
     .active{
         display: block;
     }
+
+/* HERO */
+.hero-section{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+}
+.hero-section .hero-info{
+    width: 60%;
+    padding-right: 0%;
+
+}
+.hero-section .hero-info h1{
+    font-size: 20px;
+    padding-right: 10px;
+}
+.hero-section .hero-info h2{
+    font-size: 14px;
+    padding-right: 10px;
+}
+.hero-image img{
+    width: 300px;
+    height: 300px;
+}
+.hero-button{
+    font-size: 12px;
+    width: 180px;
+}
+
+/* ABOUT */
+.about-section{
+    display: flex;
+    flex-direction: column;
+}
+.about-info{
+    display: block;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    padding: 5px 10px;
+    margin-top: 25%;
+}
+.about-info h1{
+    font-size: 24px;
+}
+.about-info h2{
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.about-image {
+    width: 500px;
+    height: 400px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+/* DOCTORS */
+
+.staff-section{
+    min-height: 100vh;
+}
+.doctors-container h1{
+    font-size: 30px;
+}
+
+/* SERVICES */
+
+.services-section{
+    min-height: 100vh;   
+}
+.services-container h1{
+    font-size: 30px;
+}
+.services-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/* TESTIMONIALS */
+.row{
+    display: block;
+    justify-content: center;
+    background-color: aliceblue;
+}
+.testimonial-column{
+    flex: 100%;
+    min-width: 100%;
+    box-shadow: border-box;
+    padding: 15px;
+    background-color: aliceblue;
+}
+.testimonials-container h1{
+    font-size: 30px;
+}
+
+/* CONNECTED */
+
+.subscribe-section{
+    height: 100vh;
+}
+.subscribe-section h1{
+    font-size: 30px;
+}
+.subscribe-title{
+    align-items: center;
+    justify-content: center;
+    padding-left: 25%;
+    padding-top: 25%;
+    font-size: 20px;
+}
+.subscribe-text{
+    font-size: 14px;
+}
+.subscribe-content{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* FOOTER */
+.footer-column p{
+    font-size: 10px;
+}
+.footer-column h3{
+    font-size: 12px;
+} 
+.footer-section .hours-and-location{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.footer-section .hours-and-location .address{
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+.footer-section .socials #icon{
+    font-size: 20px;
+    padding-left: 0px;
+}
 }
