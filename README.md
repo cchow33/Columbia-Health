@@ -4,16 +4,15 @@ This is a website for Columbia Health Hospital, a nationally ranked medical cent
 
 This website connects patients to the hospital's key services, weekly newsletter,  and the dozens of physicians and specialists that make up their multi-disciplinary team of medical experts.
 
-<img src="footer-section.png" alt="screenshot" title="Footer screenshot">
-![Footer Screenshot](footer-section.png)
+![landing-page](https://user-images.githubusercontent.com/109078860/189557222-61299437-afdd-47bb-8563-3a91cb9a4a65.png)
 
+![subscribe-section](https://user-images.githubusercontent.com/109078860/189557225-a7694042-6312-476f-b5c8-f781347e6143.png)
 
 Built With
 
 HTML
 JavaScript
 CSS
-
 
 Links
 https://myhealth-medical.netlify.app
