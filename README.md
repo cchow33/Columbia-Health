@@ -6,7 +6,6 @@ This website connects patients to the hospital's key services, weekly newsletter
 
 ![landing-page](https://user-images.githubusercontent.com/109078860/189557222-61299437-afdd-47bb-8563-3a91cb9a4a65.png)
 
-![subscribe-section](https://user-images.githubusercontent.com/109078860/189557225-a7694042-6312-476f-b5c8-f781347e6143.png)
 
 Built With
 
