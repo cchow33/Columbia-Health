@@ -1,4 +1,4 @@
-About the Project
+**About the Project**
 
 This is a website for Columbia Health Hospital, a nationally ranked medical centre in Toronto that provides expert health and medical care to patients in the local community.
 
@@ -11,11 +11,11 @@ This website connects patients to the hospital's key services, weekly newsletter
 ![subscribe-section](https://user-images.githubusercontent.com/109078860/189557400-e36ca169-c1bd-48c3-bf75-b9f7795ea551.png)
 
 
-Built With
+**Built With**
 
 HTML
 JavaScript
 CSS
 
-Links
+**Link**
 https://myhealth-medical.netlify.app
